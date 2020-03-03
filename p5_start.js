@@ -285,7 +285,7 @@ function setup() {
   }
   //Row10 Maths Vertical
   let row10 = [];
-  row10 = [42,43,44,45,46];
+  row10 = [42,43,45,44,46];
   for (let x = 0; x<row10.length; x++) {
     buttons[row10[x]].position(startpos[0]+(bsp*6)+30, startpos[1]+bspH*(x));
   }
@@ -345,11 +345,6 @@ function setup() {
 function selectCol(numIn, colorSelect) {
     buttons[numIn].style('border-color', color(colorSelect));
     buttons[numIn].style('background-color', color(colorSelect));
-}
-
-function selectPP(numIn, colorSelect) {
-    buttons[numIn].style('border-color', color(colorSelect));
-    buttons[numIn].style('color', color(255));
 }
 
 function allBlack() {
@@ -412,10 +407,9 @@ function functions0() {
   if (Z[0] == 0) {
     allBlack();
     selectCol(0, sc);
-    selectCol(17, pc);
+    selectCol(16, pc);
     selectCol(26, pc);
-    selectPP(27, pc);
-    selectCol(29, pc);
+    selectCol(28, pc);
     eraseText();
     displayInfo(0);
     for (let x = 0; x<cNames.length; x++) {
@@ -462,7 +456,6 @@ function functions2() {
     selectCol(2, sc);
     selectCol(3, pc);
     selectCol(25, pc);
-    selectCol(27, ppc);
     eraseText();
     displayInfo(2);
     for (let x = 0; x<cNames.length; x++) {
@@ -564,8 +557,11 @@ function functions6() {
     selectCol(23, pc);
     selectCol(14, pc);
     selectCol(15, pc);
+    selectCol(16, ppc);
     selectCol(44, prc);
-    selectCol(22, ppc);
+    selectCol(24, ppc);
+    selectCol(26, ppc);
+    selectCol(30, ppc);
     eraseText();
     displayInfo(6);
     for (let x = 0; x<cNames.length; x++) {
@@ -591,6 +587,7 @@ function functions7() {
     selectCol(46, prc);
     selectCol(32, prc);
     selectCol(22, ppc);
+    selectCol(16, ppc);
     eraseText();
     displayInfo(7);
     for (let x = 0; x<cNames.length; x++) {
@@ -731,8 +728,6 @@ function functions12() {
     selectCol(8, prc);
     selectCol(26, ppc);
     selectCol(30, ppc);
-    selectCol(21, ppc);
-    selectCol(19, ppc);
     eraseText();
     displayInfo(12);
     for (let x = 0; x<cNames.length; x++) {
@@ -802,6 +797,7 @@ function functions15() {
     selectCol(33, prc);
     selectCol(6, prc);
     selectCol(7, prc);
+    selectCol(16, pc);
     eraseText();
     displayInfo(15);
     for (let x = 0; x<cNames.length; x++) {
@@ -848,9 +844,8 @@ function functions17() {
     selectCol(17, sc);
     selectCol(18, pc);
     selectCol(24, pc);
-    selectCol(26, pc);
+    selectCol(23, pc);
     selectCol(9, prc);
-    selectCol(27, ppc);
     eraseText();
     displayInfo(17);
     for (let x = 0; x<cNames.length; x++) {
@@ -919,7 +914,6 @@ function functions20() {
     selectCol(19, pc);
     selectCol(8, prc);
     selectCol(11, prc);
-    selectCol(18, ppc);
     eraseText();
     displayInfo(20);
     for (let x = 0; x<cNames.length; x++) {
@@ -940,7 +934,6 @@ function functions21() {
   if (Z[21] == 0) {
     allBlack();
     selectCol(21, sc);
-    selectCol(18, pc);
     selectCol(20, prc);
     eraseText();
     displayInfo(21);
