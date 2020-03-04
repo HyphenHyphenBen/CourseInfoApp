@@ -150,7 +150,7 @@ let W = 400;
 let H  = 474;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight+200);
+  createCanvas(1440, 905);
   background(pc);
   
   textFont('Verdana');
@@ -375,25 +375,25 @@ function displayInfo(numIn) {
   text('Credits:' + " " + creditsArray[numIn], bsp*8+10+adjX, 47.5+adjY);
   text('Course Description:' + '\n' + descArray[numIn], bsp*8+10+adjX, 65+adjY, bsp*3-10, bsp*4);
   fill(sc);
-  rect((bsp*8)+10+adjX, (bspH*3)+5+adjY, 20,20);
-  fill(0);
-  text('Selected Course', (bsp*8)+32+adjX, (bspH*3)+20+adjY);
-  fill(crc);
-  rect((bsp*8)+10+adjX, (bspH*3)+30+adjY, 20,20);
-  fill(0);
-  text('Core-requisite Course', (bsp*8)+32+adjX, (bspH*3)+45+adjY);
-  fill(prc);
   rect((bsp*8)+10+adjX, (bspH*3)+55+adjY, 20,20);
   fill(0);
-  text('Pre-requisite Course', (bsp*8)+32+adjX, (bspH*3)+70+adjY);
-  fill(pc);
+  text('Selected Course', (bsp*8)+32+adjX, (bspH*3)+70+adjY);
+  fill(crc);
   rect((bsp*8)+10+adjX, (bspH*3)+80+adjY, 20,20);
   fill(0);
-  text('Proceeding Course', (bsp*8)+32+adjX, (bspH*3)+95+adjY);
-  fill(ppc);
+  text('Core-requisite Course', (bsp*8)+32+adjX, (bspH*3)+95+adjY);
+  fill(prc);
   rect((bsp*8)+10+adjX, (bspH*3)+105+adjY, 20,20);
   fill(0);
-  text('Course After Proceeding Course', (bsp*8)+32+adjX, (bspH*3)+120+adjY);
+  text('Pre-requisite Course', (bsp*8)+32+adjX, (bspH*3)+120+adjY);
+  fill(pc);
+  rect((bsp*8)+10+adjX, (bspH*3)+130+adjY, 20,20);
+  fill(0);
+  text('Proceeding Course', (bsp*8)+32+adjX, (bspH*3)+145+adjY);
+  fill(ppc);
+  rect((bsp*8)+10+adjX, (bspH*3)+155+adjY, 20,20);
+  fill(0);
+  text('Course After Proceeding Course', (bsp*8)+32+adjX, (bspH*3)+170+adjY);
 }
 
 function rundefault() {
