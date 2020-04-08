@@ -1,20 +1,21 @@
 let buttons = [];
-let cNames = ['SEE 100  <br />  Engineering Graphics', 'SEE 101W  <br />  Professional Writing', 'SEE 110 <br /> Energy & Society', 'SEE 111  <br />  Energy Solutions I', 'SEE 221  <br />  Statics & Mechanics', 'SEE 222  <br />  Engineering Materials', 'SEE 224  <br />  Thermodynamics', 'SEE 225  <br />  Fluid Mechanics', 'SEE 230  <br />  Electric Circuits', 'SEE 231  <br />  Electronic Devices',
-'SEE 241  <br />  Measurement & Forecasting', 'SEE 242  <br />  Computational Methods', 'SEE 251  <br />  Machines and Energy', 'SEE 300  <br />  Business of Engineering', 'SEE 310  <br />  Energy Solutions II', 'SEE 324  <br />  Heat & Mass Transfer', 'SEE 325  <br />  Mechanical Design', 'SEE 331  <br />  Power Electronics', 'SEE 332  <br />  Power Systems Design', 'SEE 333  <br />  Networks & Communication',
-'SEE 341  <br />  Signals & Systems', 'SEE 342  <br />  Feedback Control', 'SEE 351 Bioprocess Engineering', 'SEE 352  <br />  Power Generation', 'SEE 354  <br />  Energy Storage', 'SEE 402  <br />  Professional Ethics', 'SEE 410W  <br />  Energy Design Project I', 'SEE 411  <br />  Energy Design Project II', 'SEE 460  <br />  Additive Manufacturing', 'SEE 461  <br />  Electronics Manufacturing',
-'SEE 462  <br />  Manufacturing Processes', 'SEE 463  <br />  Embedded Computer Systems', 'PHYS 140  <br />  Mechanics & Modern Physics I', 'PHYS 141  <br />  Optics, Elec. & Magnetism', 'CHEM 121  <br />  General Chemistry & Lab', 'CMPT 130  <br />  Computer Programming I', 'CMPT 135 <br /> Computer Programming II', 'BUS 238  <br />  Entrepreneurship & Innovation', 'REM 321  <br />  Ecological Economics', 'GEOG 323  <br />  Industrial Location', 'GEOG 324  <br />  Transportation Geography',
-'GEOG 362  <br />  Urban Geography', 'MATH 151 <br /> Calculus I', 'MATH 152 <br /> Calculus II', 'MATH 251  <br />  Calculus III', 'MATH 232  <br />  Linear Algebra', 'MATH 260  <br />  Differential Equations','','','',''];
+let cNames = ['SEE 100', 'SEE 101W', 'SEE 110', 'SEE 111', 'SEE 221', 'SEE 222', 'SEE 224', 'SEE 225', 'SEE 230', 'SEE 231',
+'SEE 241', 'SEE 242', 'SEE 251', 'SEE 300', 'SEE 310', 'SEE 324', 'SEE 325', 'SEE 331', 'SEE 332', 'SEE 333',
+'SEE 341', 'SEE 342', 'SEE 351', 'SEE 352', 'SEE 354', 'SEE 402', 'SEE 410W', 'SEE 411', 'SEE 460', 'SEE 461',
+'SEE 462', 'SEE 463', 'PHYS 140', 'PHYS 141', 'CHEM 121', 'CMPT 130', 'CMPT 135', 'BUS 238', 'REM 321', 'GEOG 323', 'GEOG 324',
+'GEOG 362', 'MATH 151', 'MATH 152', 'MATH 251', 'MATH 232', 'MATH 260','','','','','Co-op','Co-op','Co-op','Technical Elective I','Technical Elective II','Technical Elective III', 'B-Hum Elective',''];
 let cNamesB = ['SEE 100 Engineering Graphics', 'SEE 101W Professional Writing', 'SEE 110 Energy & Society', 'SEE 111 Energy Solutions I', 'SEE 221 Statics & Mechanics', 'SEE 222  Engineering Materials', 'SEE 224 Thermodynamics', 'SEE 225 Fluid Mechanics', 'SEE 230 Electric Circuits', 'SEE 231 Electronic Devices',
 'SEE 241 Measurement & Forecasting', 'SEE 242 Computational Methods', 'SEE 251 Machines and Energy', 'SEE 300 Business of Engineering', 'SEE 310 Energy Solutions II', 'SEE 324 Heat & Mass Transfer', 'SEE 325 Mechanical Design', 'SEE 331 Power Electronics', 'SEE 332 Power Systems Design', 'SEE 333 Networks & Communication',
 'SEE 341 Signals & Systems', 'SEE 342 Feedback Control', 'SEE 351 Bioprocess Engineering', 'SEE 352 Power Generation', 'SEE 354 Energy Storage', 'SEE 402 Professional Ethics', 'SEE 410W Energy Design Project I', 'SEE 411 Energy Design Project II', 'SEE 460 Additive Manufacturing', 'SEE 461 Electronics Manufacturing',
 'SEE 462 Manufacturing Processes', 'SEE 463 Embedded Computer Systems', 'PHYS 140 Mechanics & Modern Physics I', 'PHYS 141 Optics, Elec. & Magnetism', 'CHEM 121 General Chemistry & Lab', 'CMPT 130 Computer Programming I', 'CMPT 135 Computer Programming II', 'BUS 238 Entrepreneurship & Innovation', 'REM 321 Ecological Economics', 'GEOG 323 Industrial Location', 'GEOG 324 Transportation Geography',
-'GEOG 362 Urban Geography', 'MATH 151 Calculus I', 'MATH 152 Calculus II', 'MATH 251 Calculus III', 'MATH 232 Linear Algebra', 'MATH 260 Differential Equations','','','',''];
+'GEOG 362 Urban Geography', 'MATH 151 Calculus I', 'MATH 152 Calculus II', 'MATH 251 Calculus III', 'MATH 232 Linear Algebra', 'MATH 260 Differential Equations','','','','','Co-op','Co-op','Co-op','SEE Technical Elective I','SEE Technical Elective II','SEE Technical Elective III','Complementary Elective (B-Hum)',''];
 let creditsArray = ['3', '3', '3', '4', '4', '3',
 '3', '4', '4', '4', '3', '3', '3', '3', '4', '3', '3', '4', '3', '3', '3', '4', '3', '3', '3', '2', '3', '3', '3', '3',
-'3', '3', '4', '4', '4', '3', '3', '3', '4', '4', '4', '4', '3', '3', '3', '3', '3', '', '', '', '', '', '', ''];
+'3', '3', '4', '4', '4', '3', '3', '3', '4', '4', '4', '4', '3', '3', '3', '3', '3', '', '', '', '', '', '', '','','','','',''];
 let descArray = ['Introduction to graphical communication in the context of engineering design. Students learn to think and communicate visually. With the use of computer aided design (CAD) tools, students learn the theory and practice of design by dissecting, graphically representing, and redesigning products. Students with credit for ENSC 104, MSE 100, or IAT 106 may not take this course for further credit. ', 'Fundamentals of communicating technical information clearly and concisely for professional engineers. A focus on communicating persuasively about various contemporary technical, social, ethical and environmental issues with technical and non-technical audiences. Students will practice providing constructive feedback to peers, giving presentations and working in a team. Students with credit for CMPT 105W, ENSC 102, ENSC 105W, or MSE 101W may not take this course for further credit. Writing. ', 'Energy availability and sources, environmental consequences of energy supply and consumption, and societal impacts. Explores the environmental, economic, social, and political implications of the choices a society makes to meet its energy needs. Definitions of sustainability. Special emphasis on communication skills. ', 'Introduction to the process of sustainable engineering design. Historical perspective on role of energy, resources and technology in society. Development and demonstration of sustainability thinking through research, case study and design project undertaken by teams of students with integration of socio-economic factors and planning. Course introduces Project Based Learning methods.', 'Introduction to solid mechanics including statics, stress, strain, and deformation. Equilibrium conditions, axial loading, torsional loading, pure bending, stresses and deflections in rods and beams. Students with credit for ENSC 281, MSE 221, or ENSC 385 may not take this course for further credit.', 'Introduction to engineering materials by control of their structures to achieve different properties and performance. Techniques for modern materials engineering practice. Covers crystal and non-crystal structures and instruments for structure determination; principles of material failure, polymers, ceramics, nano-materials, and composites; electronic materials, and electro-chemical energy materials; quality control and reliability. Prerequisite: PHYS 140, CHEM 121. Students with credit for MSE 220 or ENSC 330 may not take this course for further credit. ',
 'Basic energy concepts and definitions; first and second laws of thermodynamics; ideal and real gases; thermodynamic properties; with emphasis on analysis and applications to energy systems engineering. Prerequisite: MATH 251.', 'The fundamentals of fluid mechanics for engineers, emphasizing the basics of fluid statics and fluid motion, with applications in energy system engineering. Prerequisite: PHYS 140, MATH 251, MATH 310. Students with credit for ENSC 283 or MSE 223 may not take this course for further credit. ', 'Fundamental elements of electrical circuits; circuits laws; series and parallel circuits; operational amplifiers; network theorems; nodal and mesh methods; analysis of natural and step response of first and second order circuits; real, reactive and rms power. Covers worker safety implications of electricity, and safety of common laboratory practices such as soldering. Prerequisite: PHYS 141, MATH 232. Corequisite: MATH 310. Students with credit for ENSC 220 or MSE 250 may not take this course for further credit.', 'Analysis of the basic electronic components, amplifiers, diodes, semiconductors, transistors and MOSFETs. Introduction to specific instrumentation, including actuators and sensors. Design of electronic circuits based on real world scenarios. Prerequisite: SEE 230. Students with credit for MSE 251 or ENSC 225 may not take this course for further credit. ', 'An introduction to methods for collecting and analysing engineering data. Topics include engineering data representation, probability density functions, engineering measurements, error analysis, test of hypotheses, regression, and design of experiments. Prerequisite: PHYS 141, MATH 232. Corequisite: MATH 251. Students with credit for ENSC 280, MSE 210, PHYS 231, or STAT 270 may not take this course for further credit.', 'Apply numerical methods to solve engineering problems with an emphasis on sustainable energy engineering. Prerequisite: MATH 152, MATH 232. Students with credit for MACM 316 or MSE 211 may not take this course for further credit.', 'Principles, operation, and analysis of electromechanical energy conversion systems and their applications. Prerequisite: SEE 230, SEE 221, MATH 310.', 'Economic and entrepreneurial concepts important to engineers who manage projects, run businesses, or need to decide on the most efficient method for accomplishing a task. Topics include: financial accounting and metrics, economic equivalence, rates of return, depreciation, income taxes, project and cost-benefit analyses, capital budgeting, financing methods, risk and uncertainty, business plans. Prerequisite: A minimum of 75 units. Students with credit for ENSC 201, ENSC 311, ENSC 410, ENSC 411, or MSE 300 may not take this course for further credit.', 'Integrated design methodology for sustainable engineering problems; implementation through an energy system project undertaken in a project based learning environment. Introduction to modelling, simulation and optimization of energy systems. Global and local regulatory and policy frameworks. Demonstration of integrated sustainability thinking through design project, report and presentation. Special emphasis on communication skills. Prerequisite: Completion of one co-op work term; SEE 251, 224, 242.', 'Introduces the basic principles of heat and mass transfer with analysis and application to real-world sustainable energy systems. Prerequisite: PHYS 141, SEE 224, SEE 225. ', 'Introduction and application of Finite Element Analysis (FEA) to energy systems design problems involving engineering mechanics, heat transfer and machine elements. Includes an introduction to commercial FEA software and applications to practical problems. Concepts relating to engineering mechanics and machine elements are developed in the context of design projects. Prerequisite: SEE 100, SEE 221, SEE 222, SEE 324. ', 'Introduction to the fundamentals of power electronic circuits, components, and operation, and principles of electric power conversion in DC and AC applications. Prerequisite: SEE 231. Students with credit for MSE 353 may not take this course for further credit.', 'Interconnected power systems including generators, transformers, electric motors and transmission lines; active and reactive power flow; symmetrical components; symmetrical and unsymmetrical short circuit fault calculations; protection systems, circuit breakers, transient stability, and grid voltage and frequency control. Labs, field trips and projects related to power grid operation, control, and design. Prerequisite: SEE 251, SEE 331.', 'Fundamentals of communication networks: reference models, layered architecture. Physical layer analysis and design. Performance analysis of communication protocols at the data link, network, and transport layers. Medium access control, congestion control, routing. Network security, privacy, and social issues. Tools for simulation and analysis of communication networks. Prerequisite: SEE 341.', 'Modelling and analysis of continuous and discrete signals using linear techniques. Laplace transforms; methods for basic modelling of physical systems; discrete and continuous convolution; impulse and step response; transfer functions and filtering; continuous Fourier transform and its relationship to the Laplace transform; frequency response and Bode plots; sampling; Z-transform. Prerequisite: SEE 242, SEE 230. Students with credit for MSE 280 or ENSC 380 may not take this course for further credit. ', 'Fundamentals of feedback control system design and analysis, including practical and theoretical aspects. Significant lab component in which students design controllers and evaluate their robustness to modeling errors and nonlinearities. Prerequisite: SEE 341. Students with credit for ENSC 383 or MSE 381 may not take this course for further credit. ', 'Combines biotechnology and engineering for materials and energy harvesting from renewable feedstocks. Covers fundamental biomolecular research on proteins, enzymes, microbes, biosensors, bioseparations and bioreactors. Applications in food processing preservation; biofuel; air and wastewater treatment; supramolecular materials for solar energy/photosynthesis; microfluidics for bioreactors; DNA chips; bioenergy; bio fuel cells; pulp/paper. Prerequisite: MATH 310, SEE 224. Corequisite: SEE 324. ', 'Application of thermodynamics, chemistry, and transport physics to energy conversion technologies and systems. Analysis of energy conversion systems with emphasis on efficiency, performance, and environmental impact. Prerequisite: SEE 222, SEE 224, SEE 331. ', 'The characteristics, applications, limitations, and environmental impacts of various energy storage technologies and techniques are analyzed, compared and implemented in a lab setting. Electrochemical, mechanical, thermal and emerging energy storage options are considered. Prerequisite: SEE 222, SEE 331, SEE 324. ', "An introduction to the engineering profession, law and ethics, and the engineers' responsibility to society. Students will explore issues related to worker and public safety and the social implications and environmental impacts of engineering. Includes how to successfully negotiate the transition to the next career stage. Special emphasis on communication skills. Prerequisite: Minimum of 100 units; SEE 110. Students with credit for ENSC 406 or MSE 402 may not take this course for further credit.", 'This is the first course in a team-based, two-course capstone sequence. Focuses on project management, technical writing skills, and teamwork skills and strategies within the context of an engineering design project. Documentation topics cover proposals, functional and design specifications, progress reports and user manuals. An interim project report and presentation is required. SEE 411 must be taken in the term directly following the successful completion of SEE 410W. Grades awarded in SEE 410W are conditional on the successful completion of SEE 411 in the subsequent term. Prerequisite: 100 units; 2 completed co-op terms; SEE 100, SEE 101W, SEE 310. SEE students cannot take MSE 410, MSE 411, ENSC 405W or ENSC 440 for credit. Writing.', 'This is the second course in the team-based, two-course capstone sequence. Students synthesize their learning across the SEE program to research, design, build and test the hardware implementation of a working system. Includes a shop training workshop, engineering standards on how to design for safety, and human factors. A final report and presentation is required. Prerequisite: SEE 410W. Must be taken in the term immediately following 410W. In order to obtain credit, students must successfully complete both SEE 410W and SEE 411. SEE students cannot take MSE 410, MSE 411, ENSC 405W or ENSC 440 for credit. ', 'Additive manufacturing processes; Design for additive manufacturing; Problem-based additive manufacturing, Project-based additive manufacturing; Light-based 3D printing, Metal 3D printing. Extrusion-based 3D printing; 3D printed electronics; Direct digital manufacturing; 4D printing. Prerequisite: SEE 100, SEE 221, SEE 222. \n \nAdditional "One of" Options: ENSC 450 - VLSI Systems Design; ENSC 495 - Introduction to Microelectronic Fabrication; MSE 480 - Manufacturing Systems; MSE 481 - Industrial Control Systems', 'Electronics manufacturing and assembly technologies and processes in the context of sustainability. PCB and interconnect technologies, component selection and handling, material properties and selection, thermal, mechanical and environmental effects, product testing, environmental and legal standards. Prerequisite: SEE 221, SEE 231. \n \nAdditional "One of" Options: ENSC 450 - VLSI Systems Design; ENSC 495 - Introduction to Microelectronic Fabrication; MSE 480 - Manufacturing Systems; MSE 481 - Industrial Control Systems',
-'Manufacturing processes and Engineering materials in the context of sustainable manufacturing. Manufacturing technologies and process flow. Productivity and green manufacturing practices. Engineering material selection. Manufacturing processes including forming, separating, fabrication, conditioning and finishing. Prerequisite: SEE 221, SEE 310. \n \nAdditional "One of" Options: ENSC 450 - VLSI Systems Design; ENSC 495 - Introduction to Microelectronic Fabrication; MSE 480 - Manufacturing Systems; MSE 481 - Industrial Control Systems', 'Implementation and design of embedded computer systems used in various real-time applications including energy systems, power electronics, and automation. Prerequisite: CMPT 130, SEE 231. \n \nAdditional "One of" Options: ENSC 450 - VLSI Systems Design; ENSC 495 - Introduction to Microelectronic Fabrication; MSE 480 - Manufacturing Systems; MSE 481 - Industrial Control Systems', 'A general calculus-based introduction to mechanics taught in an integrated lecture-laboratory environment. Topics include translational and rotational motion, momentum, energy, gravitation, and selected topics in modern physics. Prerequisite: BC Principles of Physics 12, or PHYS 100 or equivalent, with a minimum grade of C-. Corequisite: MATH 150 or 151 or 154. Students with credit for PHYS 125 or 120 or 101 may not take this course for further credit. Quantitative/Breadth-Science. ', 'A general calculus-based introduction to electricity, magnetism and optics taught in an integrated lecture-laboratory environment. Topics include electricity, magnetism, simple circuits, optics and topics from applied physics. Prerequisite: PHYS 120 or PHYS 125 or PHYS 140, with a minimum grade of C-, or PHYS 101 with a minimum grade of B. Corequisite: MATH 152 or MATH 155. Students with credit for PHYS 126 or 121 or 102 may not take this course for further credit. Quantitative/Breadth-Science. ', "Atomic and molecular structure; chemical bonding; thermochemistry; elements; periodic table; gases liquids, solids, and solutions. This course includes a laboratory component. Prerequisite: Chemistry 12 with a minimum grade of C, or CHEM 109 or 111 with a minimum grade of C-. Students with credit for CHEM 120 or 123 may not take this course for further credit. Quantitative/Breadth-Science.", 'An introduction to computing science and computer programming, using a systems oriented language, such as C or C++. This course introduces basic computing science concepts. Topics will include: elementary data types, control structures, functions, arrays and strings, fundamental algorithms, computer organization and memory management. Prerequisite: BC Math 12 (or equivalent, or any of MATH 100, 150, 151, 154, or 157). Students with credit for CMPT 102, 120, 128 or 166 may not take this course for further credit. Students who have taken CMPT 125, 129 or 135 first may not then take this course for further credit. Quantitative/Breadth-Science. ', 'A second course in systems-oriented programming and computing science that builds upon the foundation set in CMPT 130 using a systems-oriented language such as C or C++. Topics: a review of the basic elements of programming; introduction to object-oriented programming (OOP); techniques for designing and testing programs; use and implementation of elementary data structures and algorithms; introduction to embedded systems programming. Prerequisite: CMPT 130. Students with credit for CMPT 125, 126, or 129 may not take this course for further credit. Quantitative. ', 'Students will build collaborative and creative skills necessary to become effective innovators through hands-on application via interdisciplinary teamwork. Entrepreneurship and innovation of all types will be addressed including social, commercial, creative, sustainable and technological perspectives. Prerequisite: 12 Units. Breadth-Social Sciences. ', 'Introduces students to the concepts and methods of ecological economics. Provides students with grounding in the core principles of conventional economics applied to the environment but then extends this to the integration of economics and ecology to create a new ecological-economic understanding of environmental change and sustainability. Prerequisite: 45 units. Students with credit for ENV 321 cannot take REM 321 for further credit. Breadth-Social Sciences. ', 'An examination of the factors affecting industrial location and the geographic organization of production systems within and among firms from the perspectives of national, regional and urban development. Prerequisite: At least 45 units, including GEOG 100. ', 'An empirical and theoretical examination of the geographical aspects of transportation systems. Prerequisite: At least 45 units, including GEOG 100. ', 'Current concepts and approaches in urban geography regarding the development of built environments. Central concerns are the relationships between urbanization and the state, capital, and civil society at various scales. Prerequisite: At least 45 units, including GEOG 100. Students with credit for GEOG 362W may not take this course for further credit. ', "Designed for students specializing in mathematics, physics, chemistry, computing science and engineering. Logarithmic and exponential functions, trigonometric functions, inverse functions. Limits, continuity, and derivatives. Techniques of differentiation, including logarithmic and implicit differentiation. The Mean Value Theorem. Applications of differentiation including extrema, curve sketching, Newton's method. Introduction to modeling with differential equations. Polar coordinates, parametric curves. Prerequisite: Pre-Calculus 12 (or equivalent) with a grade of at least A, or MATH 100 with a grade of at least B, or achieving a satisfactory grade on the Simon Fraser University Calculus Readiness Test. Students with credit for either MATH 150, 154 or 157 may not take MATH 151 for further credit. Quantitative.", 'Riemann sum, Fundamental Theorem of Calculus, definite, indefinite and improper integrals, approximate integration, integration techniques, applications of integration. First-order separable differential equations and growth models. Sequences and series, series tests, power series, convergence and applications of power series. Prerequisite: MATH 150 or 151; or MATH 154 or 157 with a grade of at least B. Students with credit for MATH 155 or 158 may not take this course for further credit. Quantitative. ', "Rectangular, cylindrical and spherical coordinates. Vectors, lines, planes, cylinders, quadric surfaces. Vector functions, curves, motion in space. Differential and integral calculus of several variables. Vector fields, line integrals, fundamental theorem for line integrals, Green's theorem. Prerequisite: MATH 152; or MATH 155 or MATH 158 with a grade of at least B. Recommended: It is recommended that MATH 240 or 232 be taken before or concurrently with MATH 251. Quantitative. ", 'Linear equations, matrices, determinants. Introduction to vector spaces and linear transformations and bases. Complex numbers. Eigenvalues and eigenvectors; diagonalization. Inner products and orthogonality; least squares problems. An emphasis on applications involving matrix and vector calculations. Prerequisite: MATH 150 or 151; or MACM 101; or MATH 154 or 157, both with a grade of at least B. Students with credit for MATH 240 make not take this course for further credit. Quantitative. ', 'First-order differential equations, second- and higher-order linear equations, series solutions, introduction to Laplace transform, systems and numerical methods, applications in the physical, biological and social sciences. Prerequisite: MATH 152; or MATH 155/158 with a grade of at least B, MATH 232 or 240. Quantitative. ', '', '', '', '', '', '', ''];
+'Manufacturing processes and Engineering materials in the context of sustainable manufacturing. Manufacturing technologies and process flow. Productivity and green manufacturing practices. Engineering material selection. Manufacturing processes including forming, separating, fabrication, conditioning and finishing. Prerequisite: SEE 221, SEE 310. \n \nAdditional "One of" Options: ENSC 450 - VLSI Systems Design; ENSC 495 - Introduction to Microelectronic Fabrication; MSE 480 - Manufacturing Systems; MSE 481 - Industrial Control Systems', 'Implementation and design of embedded computer systems used in various real-time applications including energy systems, power electronics, and automation. Prerequisite: CMPT 130, SEE 231. \n \nAdditional "One of" Options: ENSC 450 - VLSI Systems Design; ENSC 495 - Introduction to Microelectronic Fabrication; MSE 480 - Manufacturing Systems; MSE 481 - Industrial Control Systems', 'A general calculus-based introduction to mechanics taught in an integrated lecture-laboratory environment. Topics include translational and rotational motion, momentum, energy, gravitation, and selected topics in modern physics. Prerequisite: BC Principles of Physics 12, or PHYS 100 or equivalent, with a minimum grade of C-. Corequisite: MATH 150 or 151 or 154. Students with credit for PHYS 125 or 120 or 101 may not take this course for further credit. Quantitative/Breadth-Science. ', 'A general calculus-based introduction to electricity, magnetism and optics taught in an integrated lecture-laboratory environment. Topics include electricity, magnetism, simple circuits, optics and topics from applied physics. Prerequisite: PHYS 120 or PHYS 125 or PHYS 140, with a minimum grade of C-, or PHYS 101 with a minimum grade of B. Corequisite: MATH 152 or MATH 155. Students with credit for PHYS 126 or 121 or 102 may not take this course for further credit. Quantitative/Breadth-Science. ', "Atomic and molecular structure; chemical bonding; thermochemistry; elements; periodic table; gases liquids, solids, and solutions. This course includes a laboratory component. Prerequisite: Chemistry 12 with a minimum grade of C, or CHEM 109 or 111 with a minimum grade of C-. Students with credit for CHEM 120 or 123 may not take this course for further credit. Quantitative/Breadth-Science.", 'An introduction to computing science and computer programming, using a systems oriented language, such as C or C++. This course introduces basic computing science concepts. Topics will include: elementary data types, control structures, functions, arrays and strings, fundamental algorithms, computer organization and memory management. Prerequisite: BC Math 12 (or equivalent, or any of MATH 100, 150, 151, 154, or 157). Students with credit for CMPT 102, 120, 128 or 166 may not take this course for further credit. Students who have taken CMPT 125, 129 or 135 first may not then take this course for further credit. Quantitative/Breadth-Science. ', 'A second course in systems-oriented programming and computing science that builds upon the foundation set in CMPT 130 using a systems-oriented language such as C or C++. Topics: a review of the basic elements of programming; introduction to object-oriented programming (OOP); techniques for designing and testing programs; use and implementation of elementary data structures and algorithms; introduction to embedded systems programming. Prerequisite: CMPT 130. Students with credit for CMPT 125, 126, or 129 may not take this course for further credit. Quantitative. ', 'Students will build collaborative and creative skills necessary to become effective innovators through hands-on application via interdisciplinary teamwork. Entrepreneurship and innovation of all types will be addressed including social, commercial, creative, sustainable and technological perspectives. Prerequisite: 12 Units. Breadth-Social Sciences. ', 'Introduces students to the concepts and methods of ecological economics. Provides students with grounding in the core principles of conventional economics applied to the environment but then extends this to the integration of economics and ecology to create a new ecological-economic understanding of environmental change and sustainability. Prerequisite: 45 units. Students with credit for ENV 321 cannot take REM 321 for further credit. Breadth-Social Sciences. ', 'An examination of the factors affecting industrial location and the geographic organization of production systems within and among firms from the perspectives of national, regional and urban development. Prerequisite: At least 45 units, including GEOG 100. ', 'An empirical and theoretical examination of the geographical aspects of transportation systems. Prerequisite: At least 45 units, including GEOG 100. ', 'Current concepts and approaches in urban geography regarding the development of built environments. Central concerns are the relationships between urbanization and the state, capital, and civil society at various scales. Prerequisite: At least 45 units, including GEOG 100. Students with credit for GEOG 362W may not take this course for further credit. ', "Designed for students specializing in mathematics, physics, chemistry, computing science and engineering. Logarithmic and exponential functions, trigonometric functions, inverse functions. Limits, continuity, and derivatives. Techniques of differentiation, including logarithmic and implicit differentiation. The Mean Value Theorem. Applications of differentiation including extrema, curve sketching, Newton's method. Introduction to modeling with differential equations. Polar coordinates, parametric curves. Prerequisite: Pre-Calculus 12 (or equivalent) with a grade of at least A, or MATH 100 with a grade of at least B, or achieving a satisfactory grade on the Simon Fraser University Calculus Readiness Test. Students with credit for either MATH 150, 154 or 157 may not take MATH 151 for further credit. Quantitative.", 'Riemann sum, Fundamental Theorem of Calculus, definite, indefinite and improper integrals, approximate integration, integration techniques, applications of integration. First-order separable differential equations and growth models. Sequences and series, series tests, power series, convergence and applications of power series. Prerequisite: MATH 150 or 151; or MATH 154 or 157 with a grade of at least B. Students with credit for MATH 155 or 158 may not take this course for further credit. Quantitative. ', "Rectangular, cylindrical and spherical coordinates. Vectors, lines, planes, cylinders, quadric surfaces. Vector functions, curves, motion in space. Differential and integral calculus of several variables. Vector fields, line integrals, fundamental theorem for line integrals, Green's theorem. Prerequisite: MATH 152; or MATH 155 or MATH 158 with a grade of at least B. Recommended: It is recommended that MATH 240 or 232 be taken before or concurrently with MATH 251. Quantitative. ", 'Linear equations, matrices, determinants. Introduction to vector spaces and linear transformations and bases. Complex numbers. Eigenvalues and eigenvectors; diagonalization. Inner products and orthogonality; least squares problems. An emphasis on applications involving matrix and vector calculations. Prerequisite: MATH 150 or 151; or MACM 101; or MATH 154 or 157, both with a grade of at least B. Students with credit for MATH 240 make not take this course for further credit. Quantitative. ', 'First-order differential equations, second- and higher-order linear equations, series solutions, introduction to Laplace transform, systems and numerical methods, applications in the physical, biological and social sciences. Prerequisite: MATH 152; or MATH 155/158 with a grade of at least B, MATH 232 or 240. Quantitative.',
+'', '', '', '', '', '', '','','','','',''];
 let buttonIDPos = [];
 
 let col  = [];
@@ -61,12 +62,16 @@ let CHEMBG = [253, 255, 135];
 let CMPTBG = [230, 167, 252];
 let MATHBG = [255, 195, 135];
 let BUSBG = [214, 214, 214];
+let COOPBG = [252, 134, 144];
+let ELECBG = [173, 150, 255];
 let PHYSbdr = [148, 212, 144];
 let GEOGbdr = [235, 216, 152];
 let CHEMbdr = [253, 255, 135];
 let CMPTbdr = [230, 167, 252];
 let MATHbdr = [255, 195, 135];
 let BUSbdr = [214, 214, 214];
+let COOPbdr = [252, 134, 144];
+let ELECbdr = [173, 150, 255];
 //Border Default Color Array
 let bdca = [];
 for (let x = 0; x<4; x++) {
@@ -99,6 +104,15 @@ for (let x = 42; x<47; x++) {
 }
 for (let x = 47; x<51; x++) {
   bdca[x] = BUSbdr;
+}
+for (let x = 51; x<54; x++) {
+  bdca[x] = COOPbdr;
+}
+for (let x = 54; x<58; x++) {
+  bdca[x] = ELECbdr;
+}
+for (let x = 58; x<cNames.length; x++) {
+  bdca[x] = BUSBG;
 }
 
 
@@ -135,19 +149,29 @@ for (let x = 42; x<47; x++) {
 for (let x = 47; x<51; x++) {
   bgdca[x] = BUSBG;
 }
-
+for (let x = 51; x<54; x++) {
+  bgdca[x] = COOPBG;
+}
+for (let x = 54; x<58; x++) {
+  bgdca[x] = ELECBG;
+}
+for (let x = 58; x<cNames.length; x++) {
+  bgdca[x] = BUSBG;
+}
 //Text Default Color Array
 let tdca = [];
 
 //Button Size
-let bs = 130;
+let bs = 90;
 let bsp = bs+2;
-let bsH = 70;
-let bspH = bsH+30;
+let bsH = 40;
+let bspH = bsH+2;
+let spacingX = 15;
+let spacingY = 40;
 
 //Text Area
 let W = 400;
-let H  = 474;
+let H  = 550;
 
 function setup() {
   createCanvas(1440, 905);
@@ -171,43 +195,61 @@ function setup() {
   fill(255);
   stroke(pc);
   strokeWeight(3);
-  rect(startpos[0],startpos[1],bsp*6+6,bsH*2+38);
-  stroke(pc);
-  strokeWeight(3);
-  rect(startpos[0],startpos[1]+bspH*2,bsp*6+6,bsH*2+38);
-  stroke(pc);
-  strokeWeight(3);
-  rect(startpos[0],startpos[1]+bspH*4,bsp*6+6,bsH+8);
-  //Year 4
-  stroke(pc);
-  strokeWeight(3);
-  rect(startpos[0],startpos[1]+bspH*5,bsp*7+6+shft*3,bsH*2+shft*3+8);
-  stroke(144,144,144,0);
-  strokeWeight(3);
-  rect(startpos[0]+shft,startpos[1]+bspH*5+shft,bsp*6+6,bsH+8);
-  stroke(pc);
-  strokeWeight(3);
-  rect(startpos[0]+shft,startpos[1]+bspH*6+shft,bsp*3+6,bsH+8);
-  stroke(pc);
-  strokeWeight(3);
-  rect(startpos[0]+shft+bsp*3+30,startpos[1]+bspH*6+shft,bsp*4+6,bsH+8);
-  //Maths
-  stroke(pc);
-  strokeWeight(3);
-  rect(startpos[0]+bsp*6+30,startpos[1],bsp+6,bspH*4+bsH+8);
+  rect(startpos[0],startpos[1],bsp*2+6,bspH*3+6);
+  rect(startpos[0],startpos[1]+bspH*4,bsp*2+6,bspH*3+6);
+  rect(startpos[0],startpos[1]+bspH*8,bsp*2+6,bspH*3+6);
+  rect(startpos[0],startpos[1]+bspH*12,bsp*4+6,bspH*4+6);
+  
+  rect(startpos[0]+bsp*2+spacingX*1,startpos[1],bsp*2+6,bspH*3+6);
+  rect(startpos[0]+bsp*2+spacingX*1,startpos[1]+bspH*4,bsp*2+6,bspH*3+6);
+  rect(startpos[0]+bsp*2+spacingX*1,startpos[1]+bspH*8,bsp*2+6,bspH*3+6);
+  
+  rect(startpos[0]+bsp*4+spacingX*2,startpos[1],bsp*2+6,bspH*3+6);
+  rect(startpos[0]+bsp*4+spacingX*2,startpos[1]+bspH*4,bsp*2+6,bspH*3+6);
+  rect(startpos[0]+bsp*4+spacingX*2,startpos[1]+bspH*8,bsp*2+6,bspH*3+6);
+  rect(startpos[0]+bsp*4+spacingX*2,startpos[1]+bspH*12,bsp*2+6,bspH*4.5+6);
+
   
   //Outline Labels
   textSize(14);
   stroke(pc);
   fill(255);
-  text('Year 1', startpos[0],startpos[1]-2);
-  text('Year 1 Maths', startpos[0]+bsp*6+30,startpos[1]-2);
-  text('Year 2', startpos[0],startpos[1]+bspH*2-2);
-  text('Year 3', startpos[0],startpos[1]+bspH*4-2);
-  text('Year 4', startpos[0],startpos[1]+bspH*5-2);
-  text('One of:',startpos[0]+shft,startpos[1]+bspH*6+shft-2);
-  text('One of:',startpos[0]+shft+bsp*3+30,startpos[1]+bspH*6+shft-2);
+  text('Fall', startpos[0],startpos[1]-2);
+  text('Fall', startpos[0],startpos[1]+bspH*(4)-2);
+  text('Fall', startpos[0],startpos[1]+bspH*(8)-2);
+  text('Fall', startpos[0],startpos[1]+bspH*(12)-2);
+  text('Spring', startpos[0]+bsp*2+spacingX*1,startpos[1]-2);
+  text('Spring', startpos[0]+bsp*2+spacingX*1,startpos[1]+bspH*(4)-2);
+  text('Spring', startpos[0]+bsp*2+spacingX*1,startpos[1]+bspH*(8)-2);
+  text('Spring', startpos[0]+bsp*4+spacingX*2,startpos[1]+bspH*(12)-2);
+  text('Summer', startpos[0]+bsp*4+spacingX*2,startpos[1]-2);
+  text('Summer', startpos[0]+bsp*4+spacingX*2,startpos[1]+bspH*(4)-2);
+  text('Summer', startpos[0]+bsp*4+spacingX*2,startpos[1]+bspH*(8)-2);
+  text('One of:', startpos[0]+bsp*0+6, startpos[1]+bspH*(13.5));
+  text('One of:', startpos[0]+bsp*0+6, startpos[1]+bspH*(15));
+  text('One of:', startpos[0]+bsp*4+spacingX*2+6, startpos[1]+bspH*(14.5));
   
+  push();
+    translate( startpos[0]-2,startpos[1]+bspH*2+6);
+    rotate(PI/0.667);
+    text('Year 1',0,0);
+  pop();
+  push();
+    translate( startpos[0]-2,startpos[1]+bspH*6+6);
+    rotate(PI/0.667);
+    text('Year 2',0,0);
+  pop();
+  push();
+    translate( startpos[0]-2,startpos[1]+bspH*10+6);
+    rotate(PI/0.667);
+    text('Year 3',0,0);
+  pop();
+  push();
+    translate( startpos[0]-2,startpos[1]+bspH*14+6);
+    rotate(PI/0.667);
+    text('Year 4',0,0);
+  pop();
+    
   //Buttons Creation and Style
   for (let x = 0; x<cNames.length; x++) {
     buttons[x] = createButton(cNames[x]);
@@ -222,75 +264,146 @@ function setup() {
     buttons[x].style('font-family', 'Verdana');
     buttons[x].style('opacity', 1);
   }
-  for (let x = 47; x<47+1; x++) {
+  for (let x = 47; x<51; x++) {
     buttons[x].style('opacity', 0.4);
     buttons[x].style('cursor', 'not-allowed');
   }
-  for (let x = 48; x<48+3; x++) {
-    buttons[x].style('opacity', 0);
+    buttons[58].style('opacity', 0.4);
+    buttons[58].style('cursor', 'not-allowed');
+    for (let x = 51; x<54; x++) {
+    buttons[x].size(bs*2+2, bsH*3+4);
   }
     
-  //Row1
-  let row1 = [];
-  row1 = [0,1,2,3,4,8];
-  for (let x = 0; x<row1.length; x++) {
-    buttons[row1[x]].position(startpos[0]+bsp*x, startpos[1]+bspH*(0));
+    
+  //Button Positioning
+  
+  //Year1 Fall
+  row = [0,1];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*x, startpos[1]+bspH*(0));
   }
-  //Row2
-  let row2 = [];
-  row2 = [35,36,32,33,34,10];
-  for (let x = 0; x<row2.length; x++) {
-    buttons[row2[x]].position(startpos[0]+bsp*x, startpos[1]+bspH*(1));
+  row = [2,32];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*x, startpos[1]+bspH*(1));
   }
-  //Row3
-  let row3 = [];
-  row3 = [5,6,7,9,11,12];
-  for (let x = 0; x<row3.length; x++) {
-    buttons[row3[x]].position(startpos[0]+bsp*x, startpos[1]+bspH*(2));
+  row = [42,35];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*x, startpos[1]+bspH*(2));
   }
-  //Row4
-  let row4 = [];
-  row4 = [14,15,17,20,37,47];
-  for (let x = 0; x<row4.length; x++) {
-    buttons[row4[x]].position(startpos[0]+bsp*x, startpos[1]+bspH*(3));
+  //Year1 Spring
+  row = [3,43];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+2)+spacingX, startpos[1]+bspH*(0));
   }
-  //Row5
-  let row5 = [];
-  row5 = [13,18,21,22,23,24];
-  for (let x = 0; x<row5.length; x++) {
-    buttons[row5[x]].position(startpos[0]+bsp*x, startpos[1]+bspH*(4));
+  row = [45,36];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+2)+spacingX, startpos[1]+bspH*(1));
   }
-  //Row6
-  let row6 = [];
-  row6 = [38,16,19,25,26,27];
-  for (let x = 0; x<row6.length; x++) {
-    buttons[row6[x]].position(startpos[0]+bsp*x+shft, startpos[1]+bspH*(5)+shft);
+  row = [34,33];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+2)+spacingX, startpos[1]+bspH*(2));
   }
-  //Row7
-  let row7 = [];
-  row7 = [39,40,41];
-  for (let x = 0; x<row7.length; x++) {
-    buttons[row7[x]].position(startpos[0]+bsp*x+shft, startpos[1]+bspH*(6)+shft);
+  //Year1 Summer
+  row = [4,44];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+4)+spacingX*2, startpos[1]+bspH*(0));
   }
-  //Row8
-  let row8 = [];
-  row8 = [28,29,30,31];
-  for (let x = 0; x<row8.length; x++) {
-    buttons[row8[x]].position(startpos[0]+bsp*(3+x)+30+shft, startpos[1]+bspH*(6)+shft);
+  row = [46,8];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+4)+spacingX*2, startpos[1]+bspH*(1));
   }
-  //Row9
-  let row9 = [];
-  row9 = [48,49,50];
-  for (let x = 0; x<row9.length; x++) {
-    buttons[row9[x]].position(startpos[0]+bsp*(x)+shft, startpos[1]+bspH*(7)+shft*3);
-  }
-  //Row10 Maths Vertical
-  let row10 = [];
-  row10 = [42,43,45,44,46];
-  for (let x = 0; x<row10.length; x++) {
-    buttons[row10[x]].position(startpos[0]+(bsp*6)+30, startpos[1]+bspH*(x));
+  row = [10,48];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+4)+spacingX*2, startpos[1]+bspH*(2));
   }
   
+  
+ //Year2 Fall
+  row = [51];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*x, startpos[1]+bspH*(4));
+  }
+  //Year2 Spring
+  row = [5,6];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+2)+spacingX, startpos[1]+bspH*(4));
+  }
+  row = [7,9];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+2)+spacingX, startpos[1]+bspH*(5));
+  }
+  row = [11,12];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+2)+spacingX, startpos[1]+bspH*(6));
+  }
+  //Year2 Summer
+  row = [14,15];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+4)+spacingX*2, startpos[1]+bspH*(4));
+  }
+  row = [17,20];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+4)+spacingX*2, startpos[1]+bspH*(5));
+  }
+  row = [37,49];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+4)+spacingX*2, startpos[1]+bspH*(6));
+  }
+
+  //Year3 Fall
+  row = [52];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*x, startpos[1]+bspH*(8));
+  }
+  //Year3 Spring
+  row = [53];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+2)+spacingX, startpos[1]+bspH*(8));
+  }
+  //Year3 Summer
+  row = [22,23];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+4)+spacingX*2, startpos[1]+bspH*(8));
+  }
+  row = [18,24];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+4)+spacingX*2, startpos[1]+bspH*(9));
+  }
+  row = [13,21];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+4)+spacingX*2, startpos[1]+bspH*(10));
+  }  
+  
+//Year4 Fall
+  row = [26,38,54,55];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*x, startpos[1]+bspH*(12));
+  }
+  row = [16,19,47,58];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x), startpos[1]+bspH*(13.5));
+  }
+  row = [28,29,30,31];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*x, startpos[1]+bspH*(15));
+  }
+  //Year4 Spring
+  row = [27,25];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+4)+spacingX*2, startpos[1]+bspH*(12));
+  }
+  row = [56,57];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+4)+spacingX*2, startpos[1]+bspH*(13));
+  }
+  row = [39,40];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+4)+spacingX*2, startpos[1]+bspH*(14.5));
+  }
+  row = [41,50];
+  for (let x = 0; x<row.length; x++) {
+    buttons[row[x]].position(startpos[0]+bsp*(x+4)+spacingX*2, startpos[1]+bspH*(15.5));
+  }
   
   //Apply Functionality
   buttons[0].mousePressed(functions0);
@@ -340,6 +453,13 @@ function setup() {
   buttons[44].mousePressed(functions44);
   buttons[45].mousePressed(functions45);
   buttons[46].mousePressed(functions46);
+  buttons[51].mousePressed(functions51);
+  buttons[52].mousePressed(functions52);
+  buttons[53].mousePressed(functions53);
+  buttons[54].mousePressed(functions54);
+  buttons[55].mousePressed(functions55);
+  buttons[56].mousePressed(functions56);
+  buttons[57].mousePressed(functions57);
   
 }
 
@@ -373,27 +493,27 @@ function displayInfo(numIn) {
   text('Course Name:' + " " +cNamesB[numIn], bsp*8+10+adjX, 20+adjY);
   textSize(12);
   text('Credits:' + " " + creditsArray[numIn], bsp*8+10+adjX, 47.5+adjY);
-  text('Course Description:' + '\n' + descArray[numIn], bsp*8+10+adjX, 65+adjY, bsp*3-10, bsp*4);
+  text('Course Description:' + '\n' + descArray[numIn], bsp*8+10+adjX, 65+adjY, W-5, H);
   fill(sc);
-  rect((bsp*8)+10+adjX, (bspH*3)+55+adjY, 20,20);
+  rect((bsp*8)+10+adjX, (bspH*9)+55+adjY, 20,20);
   fill(0);
-  text('Selected Course', (bsp*8)+32+adjX, (bspH*3)+70+adjY);
+  text('Selected Course', (bsp*8)+32+adjX, (bspH*9)+70+adjY);
   fill(crc);
-  rect((bsp*8)+10+adjX, (bspH*3)+80+adjY, 20,20);
+  rect((bsp*8)+10+adjX, (bspH*9)+80+adjY, 20,20);
   fill(0);
-  text('Core-requisite Course', (bsp*8)+32+adjX, (bspH*3)+95+adjY);
+  text('Co-requisite Course', (bsp*8)+32+adjX, (bspH*9)+95+adjY);
   fill(prc);
-  rect((bsp*8)+10+adjX, (bspH*3)+105+adjY, 20,20);
+  rect((bsp*8)+10+adjX, (bspH*9)+105+adjY, 20,20);
   fill(0);
-  text('Pre-requisite Course', (bsp*8)+32+adjX, (bspH*3)+120+adjY);
+  text('Pre-requisite Course', (bsp*8)+32+adjX, (bspH*9)+120+adjY);
   fill(pc);
-  rect((bsp*8)+10+adjX, (bspH*3)+130+adjY, 20,20);
+  rect((bsp*8)+10+adjX, (bspH*9)+130+adjY, 20,20);
   fill(0);
-  text('Proceeding Course', (bsp*8)+32+adjX, (bspH*3)+145+adjY);
+  text('Proceeding Course', (bsp*8)+32+adjX, (bspH*9)+145+adjY);
   fill(ppc);
-  rect((bsp*8)+10+adjX, (bspH*3)+155+adjY, 20,20);
+  rect((bsp*8)+10+adjX, (bspH*9)+155+adjY, 20,20);
   fill(0);
-  text('Course After Proceeding Course', (bsp*8)+32+adjX, (bspH*3)+170+adjY);
+  text('Course After Proceeding Course', (bsp*8)+32+adjX, (bspH*9)+170+adjY);
 }
 
 function rundefault() {
@@ -799,6 +919,7 @@ function functions15() {
     selectCol(6, prc);
     selectCol(7, prc);
     selectCol(16, pc);
+    selectCol(22, crc);
     eraseText();
     displayInfo(15);
     for (let x = 0; x<cNames.length; x++) {
@@ -936,6 +1057,7 @@ function functions21() {
     allBlack();
     selectCol(21, sc);
     selectCol(20, prc);
+    selectCol(18, crc);
     eraseText();
     displayInfo(21);
     for (let x = 0; x<cNames.length; x++) {
@@ -1552,6 +1674,153 @@ function functions46() {
     Z[x] = 0;
     }
     Z[46] += 1;
+  }
+  else {
+    for (let x = 0; x<cNames.length; x++) {
+    buttons[x].style('color', color(0));
+    rundefault();
+    eraseText();
+    Z[x] = 0;
+    }
+   }
+}
+function functions51() {
+  if (Z[51] == 0) {
+    allBlack();
+    selectCol(51, sc);
+    //sep
+    eraseText();
+    displayInfo(51);
+    for (let x = 0; x<cNames.length; x++) {
+    Z[x] = 0;
+    }
+    Z[51] += 1;
+  }
+  else {
+    for (let x = 0; x<cNames.length; x++) {
+    buttons[x].style('color', color(0));
+    rundefault();
+    eraseText();
+    Z[x] = 0;
+    }
+   }
+}
+function functions52() {
+  if (Z[52] == 0) {
+    allBlack();
+    selectCol(52, sc);
+    //sep
+    eraseText();
+    displayInfo(52);
+    for (let x = 0; x<cNames.length; x++) {
+    Z[x] = 0;
+    }
+    Z[52] += 1;
+  }
+  else {
+    for (let x = 0; x<cNames.length; x++) {
+    buttons[x].style('color', color(0));
+    rundefault();
+    eraseText();
+    Z[x] = 0;
+    }
+   }
+}
+function functions53() {
+  if (Z[53] == 0) {
+    allBlack();
+    selectCol(53, sc);
+    //sep
+    eraseText();
+    displayInfo(53);
+    for (let x = 0; x<cNames.length; x++) {
+    Z[x] = 0;
+    }
+    Z[53] += 1;
+  }
+  else {
+    for (let x = 0; x<cNames.length; x++) {
+    buttons[x].style('color', color(0));
+    rundefault();
+    eraseText();
+    Z[x] = 0;
+    }
+   }
+}
+function functions54() {
+  if (Z[54] == 0) {
+    allBlack();
+    selectCol(54, sc);
+    //sep
+    eraseText();
+    displayInfo(54);
+    for (let x = 0; x<cNames.length; x++) {
+    Z[x] = 0;
+    }
+    Z[54] += 1;
+  }
+  else {
+    for (let x = 0; x<cNames.length; x++) {
+    buttons[x].style('color', color(0));
+    rundefault();
+    eraseText();
+    Z[x] = 0;
+    }
+   }
+}
+function functions55() {
+  if (Z[55] == 0) {
+    allBlack();
+    selectCol(55, sc);
+    //sep
+    eraseText();
+    displayInfo(55);
+    for (let x = 0; x<cNames.length; x++) {
+    Z[x] = 0;
+    }
+    Z[55] += 1;
+  }
+  else {
+    for (let x = 0; x<cNames.length; x++) {
+    buttons[x].style('color', color(0));
+    rundefault();
+    eraseText();
+    Z[x] = 0;
+    }
+   }
+}
+function functions56() {
+  if (Z[56] == 0) {
+    allBlack();
+    selectCol(56, sc);
+    //sep
+    eraseText();
+    displayInfo(56);
+    for (let x = 0; x<cNames.length; x++) {
+    Z[x] = 0;
+    }
+    Z[56] += 1;
+  }
+  else {
+    for (let x = 0; x<cNames.length; x++) {
+    buttons[x].style('color', color(0));
+    rundefault();
+    eraseText();
+    Z[x] = 0;
+    }
+   }
+}
+function functions57() {
+  if (Z[57] == 0) {
+    allBlack();
+    selectCol(57, sc);
+    //sep
+    eraseText();
+    displayInfo(57);
+    for (let x = 0; x<cNames.length; x++) {
+    Z[x] = 0;
+    }
+    Z[57] += 1;
   }
   else {
     for (let x = 0; x<cNames.length; x++) {
