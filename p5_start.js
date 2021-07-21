@@ -196,7 +196,7 @@ let H  = 550;
 
 function setup() {
   createCanvas(1200, 800);
-  background([0,0,0]);
+  background([255,255,255]);
   
   textFont('Verdana');
   
